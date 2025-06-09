@@ -8,10 +8,10 @@ def log_operation(operation, result):
 # Main calculator function
 def calculator():
     print("Welcome to the Simple Calculator!")
-    print("Select operation: +  -  *  /")
-    
+    print("Select operation: +  -  *  /  %  ^")
+
     num1 = float(input("Enter first number: "))
-    op = input("Enter operator (+, -, *, /): ")
+    op = input("Enter operator (+, -, *, /, %, ^): ")
     num2 = float(input("Enter second number: "))
 
     if op == "+":
@@ -26,6 +26,10 @@ def calculator():
         else:
             print("Error: Division by zero!")
             return
+    elif op == "%":
+        result = num1 % num2
+    elif op == "^":
+        result = num1 ** num2
     else:
         print("Invalid operator!")
         return
