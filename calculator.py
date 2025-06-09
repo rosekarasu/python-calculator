@@ -10,9 +10,13 @@ def calculator():
     print("Welcome to the Simple Calculator!")
     print("Select operation: +  -  *  /  %  ^")
 
-    num1 = float(input("Enter first number: "))
-    op = input("Enter operator (+, -, *, /, %, ^): ")
-    num2 = float(input("Enter second number: "))
+    try:
+        num1 = float(input("Enter first number: "))
+        op = input("Enter operator (+, -, *, /, %, ^): ")
+        num2 = float(input("Enter second number: "))
+    except ValueError:
+        print("❌ Error: Please enter valid numbers.")
+        return
 
     if op == "+":
         result = num1 + num2
@@ -24,17 +28,17 @@ def calculator():
         if num2 != 0:
             result = num1 / num2
         else:
-            print("Error: Division by zero!")
+            print("❌ Error: Division by zero!")
             return
     elif op == "%":
         result = num1 % num2
     elif op == "^":
         result = num1 ** num2
     else:
-        print("Invalid operator!")
+        print("❌ Invalid operator!")
         return
 
-    print(f"Result: {result}")
+    print(f"✅ Result: {result}")
     log_operation(f"{num1} {op} {num2}", result)
 
 # Run the calculator
