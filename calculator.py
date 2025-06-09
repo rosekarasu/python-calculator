@@ -1,15 +1,16 @@
 import datetime
 
-# Function to log calculations
+# Function to log calculations with timestamp
 def log_operation(operation, result):
     with open("calculator_log.txt", "a") as log_file:
         log_file.write(f"{datetime.datetime.now()} - {operation} = {result}\n")
 
 # Main calculator function
 def calculator():
-    print("Welcome to the Simple Calculator!")
-    print("Select operation: +  -  *  /  %  ^")
+    print("📟 Welcome to the Enhanced Python Calculator!")
+    print("Available operations: +  -  *  /  %  ^")
 
+    # Get user input
     try:
         num1 = float(input("Enter first number: "))
         op = input("Enter operator (+, -, *, /, %, ^): ")
@@ -18,6 +19,7 @@ def calculator():
         print("❌ Error: Please enter valid numbers.")
         return
 
+    # Perform operation
     if op == "+":
         result = num1 + num2
     elif op == "-":
@@ -38,6 +40,7 @@ def calculator():
         print("❌ Invalid operator!")
         return
 
+    # Output result and log it
     print(f"✅ Result: {result}")
     log_operation(f"{num1} {op} {num2}", result)
 
