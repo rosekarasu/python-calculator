@@ -16,8 +16,8 @@ A command-line Python calculator that supports multiple arithmetic operations wi
 
 ## 👥 Team Members
 
-- **Nimra Dawood** – Main developer, logger, UI enhancements
-- **Samai Matariq** – Feature developer: modulus, power, input loop
+- **Nimra Dawood** 
+- **Samai Matariq**
 
 ## 🚀 How to Run
 
