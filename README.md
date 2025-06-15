@@ -27,9 +27,6 @@ A command-line Python calculator that supports multiple arithmetic operations wi
 
 3. View logged operations in `calculator_log.txt`
 
-## 📸 Screenshots
-
-*(Insert screenshots here)*
 
 ## 🔄 Git Workflow Used
 
