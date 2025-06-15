@@ -17,7 +17,7 @@ A command-line Python calculator that supports multiple arithmetic operations wi
 ## 👥 Team Members
 
 - **Nimra Dawood** 
-- **Samai Matariq**
+- **SamaiMa tariq**
 
 ## 🚀 How to Run
 
