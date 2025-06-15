@@ -2,8 +2,9 @@ import datetime
 
 # Function to log calculations with timestamp
 def log_operation(operation, result):
+    timestamp = datetime.datetime.now().strftime("[%Y-%m-%d %H:%M]")
     with open("calculator_log.txt", "a") as log_file:
-        log_file.write(f"{datetime.datetime.now()} - {operation} = {result}\n")
+        log_file.write(f"{timestamp} {operation} = {result}\n")
 
 # Main calculator function
 def calculator():
