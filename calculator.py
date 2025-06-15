@@ -9,7 +9,8 @@ def log_operation(operation, result):
 # Main calculator function
 def calculator():
     print("📟 Welcome to the Enhanced Python Calculator!")
-    print("Available operations: +  -  *  /  %  ^  (Type 'log', 'clear', or 'exit')")
+    print("💡 Type 'exit' anytime to quit, or 'log' to view past results.")
+    print("Available operations: +  -  *  /  %  ^")
 
     while True:
         first = input("Enter first number (or type 'log', 'clear', or 'exit'): ").lower()
@@ -63,6 +64,7 @@ def calculator():
 
         print(f"✅ Result: {result}")
         log_operation(f"{num1} {op} {num2}", result)
+        print("\n🔁 Ready for another calculation...\n")
 
 # Run the calculator
 calculator()
